@@ -1,10 +1,11 @@
 import { Request, Response } from 'express';
 import { getCities, getCountries, getLocalities, getStates } from './service';
 import { HttpStatusCode } from '../../commons/constants';
+import { Paths } from './utils';
 
 export default [
   {
-    path: '/geo/countries',
+    path: Paths.Countries,
     method: 'get',
     handler: [
       async (req: Request, res: Response): Promise<void> => {
@@ -14,7 +15,7 @@ export default [
     ],
   },
   {
-    path: '/geo/countries/:id/states',
+    path: Paths.States,
     method: 'get',
     handler: [
       async ({ params }: Request, res: Response): Promise<void> => {
@@ -24,7 +25,7 @@ export default [
     ],
   },
   {
-    path: '/geo/states/:id/cities',
+    path: Paths.Cities,
     method: 'get',
     handler: [
       async ({ params }: Request, res: Response): Promise<void> => {
@@ -34,7 +35,7 @@ export default [
     ],
   },
   {
-    path: '/geo/cities/:id/localities',
+    path: Paths.Localities,
     method: 'get',
     handler: [
       async ({ params }: Request, res: Response): Promise<void> => {

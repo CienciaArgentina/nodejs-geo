@@ -1,4 +1,4 @@
-import usersRoutes from './geo/routes';
+import geoRoutes from './geo/routes';
 import healthRoutes from './healthcheck/routes';
 
-export default [...usersRoutes, ...healthRoutes];
+export default [...geoRoutes, ...healthRoutes];

@@ -1,8 +1,8 @@
 export enum ErrorCode {
-  NotFound = 'user.profiles.not.found',
-  BadRequest = 'user.profiles.bad.request',
-  InternalServerError = 'user.profiles.internal.server.error',
-  Unauthorized = 'user.profiles.unauthorized',
+  NotFound = 'geo.not.found',
+  BadRequest = 'geo.bad.request',
+  InternalServerError = 'geo.internal.server.error',
+  Unauthorized = 'geo.unauthorized',
 }
 
 export enum ErrorDescription {
