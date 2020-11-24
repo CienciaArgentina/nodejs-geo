@@ -1,7 +1,6 @@
 export enum TableNames {
-  Gender = 'Genders',
-}
-
-export enum EntityNames {
-  Gender = 'gender',
+  Country = 'country',
+  State = 'state',
+  City = 'city',
+  Locality = 'locality',
 }
